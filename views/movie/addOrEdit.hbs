@@ -1,0 +1,26 @@
+<h3>{{viewTitle}}</h3>
+<form action="/movie" method="post" autocomplete="off">
+<input type="hidden" name="_id" value="{{{this._id}}}">
+	<div class="form-group">
+		<div class="form-group col-md-6">
+		<label>Name</label>
+		<input type="text"class="form-control"name="name"placeholder="Name" value="{{movie.name}}">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="form-group col-md-6">
+		<label>Image</label>
+		<input type="text"class="form-control"name="img"placeholder="Image" value="{{movie.img}}">
+		</div>
+	</div>
+	<div class="form-row">
+		<div class="form-group col-md-6">
+		<label>Summary</label>
+		<input type="text"class="form-control"name="summary"placeholder="Summary" value="{{movie.summary}}">
+		</div>
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-info"><i class="fa fa-database" />Submit</button>
+		<a class="btn btn-secondary" href="/movie/list"><i class="fa fa-list-alt"></i>View All</a>
+	</div>
+</form>

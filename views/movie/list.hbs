@@ -1,0 +1,20 @@
+<h3><a class="btn btn-secondary" href="/movie"><i class="fa fa-plus"></i>Create New</a>
+ List</h3>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th> Name</th>
+			<th>Image</th>
+			<th>Summary</th>			
+		</tr>
+	</thead>
+	<tbody>
+		{{#each list}}
+		<tr>
+			<td>{{this.name}}</td>
+			<td>{{this.img}}</td>
+			<td>{{this.summary}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+</table>
